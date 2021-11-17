@@ -6,6 +6,10 @@ Dock is an ops tool which can receive Aliyun docker built hooks and run shell sc
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com)
 
+## Configuration
+
+`DOCK_PORT`: The port receiving the trigger. Default: 8000.
+
 ## TODO
 - [ ] refactor for general aliyun trigger
 - [ ] add logging features
