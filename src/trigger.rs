@@ -1,13 +1,13 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct PushData {
     pub digest: String,
     pub pushed_at: String,
     pub tag: String
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Repository {
     pub date_created: String,
     pub name: String,
@@ -19,7 +19,7 @@ pub struct Repository {
     pub repo_type: String,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Trigger {
     pub push_data: PushData,
     pub repository: Repository
