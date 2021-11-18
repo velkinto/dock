@@ -26,7 +26,6 @@ jobs:
         with:
           # (required) Binary name (non-extension portion of filename) to build and upload.
           bin: dock
-          tar: none
         env:
           # (required) GitHub token for uploading assets to GitHub Releases.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
